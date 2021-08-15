@@ -13,5 +13,17 @@ namespace BalancedBracketsTests
         {
             Assert.AreEqual(true, true);
         }
+
+        [TestMethod]
+        public void OnlyBracketsReturnsTrue()
+        {
+            Assert.IsTrue(BalancedBrackets.HasBalancedBrackets("[]"));
+        }
+
+        [TestMethod]
+        public void StringEnclosedInBrackets()
+        {
+            Assert.IsTrue(BalancedBrackets.HasBalancedBrackets("[LaunchCode]"));
+        }
     }
 }
